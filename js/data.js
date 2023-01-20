@@ -46,18 +46,23 @@ var customers = [
 ]
 
 let tableStr = '';
-
-// iterate over he array and create strings of the td's
+// iterate over the array and create strings of the td's
 Object.values(customers).map(function(customer, index) {
     console.log('RESULT', customer)
     //destructure the object to give nicer aliases for the iterations.
     const {name: name, birthdate: birthdate} = customer;
+    
+    // Bonus point, show current age based on birthdate
+    const currentAge = Math.floor((new Date() - new Date(birthdate).getTime()) / 3.15576e+10)
+
+    console.log(currentAge)
     
     // build the string with the contents of the iterated row data
     tableStr +='<tr>';
      tableStr +='<td>' + (index + 1) + '</td>';
      tableStr +='<td>' + name + '</td>';
      tableStr +='<td>' + birthdate + '</td>';
+     tableStr +='<td>' + currentAge + '</td>';
     tableStr +='</tr>';
 })
  
