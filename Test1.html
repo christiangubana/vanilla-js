@@ -15,18 +15,21 @@ Please make sure your code runs as effectively as it can.
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <title>Test1</title>
+    <title>Test1 - Customer Table</title>
+	<script type="text/javascript" src="jquery.js"></script>
     <link rel="stylesheet" href="./css/style.css" />
+	<script type="text/javascript" src="js/filter.js"></script>
   </head>
   <body>
     <div class="page-content">
-      <h2>Customers</h2>
+      <h2>Customers Table</h2>
+	  <input type="text" id="myInput" onkeyup="fiterTable()" placeholder="Search here.." title="Type in a name or age">
       <table id="customers-table">
         <thead>
-          <tr>
+          <tr class="header">
             <th>#</th>
-            <th>CustomerName:</th>
-            <th>Date of Birth:</th>
+            <th>CustomerName</th>
+            <th>Date of Birth</th>
 			<th>Current Age</th>
           </tr>
         </thead>

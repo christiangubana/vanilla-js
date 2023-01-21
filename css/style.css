@@ -1,9 +1,45 @@
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse
+/* general styling */
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+  background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+  background: linear-gradient(to right, #25c481, #25b7c4);
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  /* color: #383828; */
+
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+  
+#myInput {
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+  outline: none;
+}
+
+#customers-table {
+  width: 100%; /* Full-width */
 }
 
 table, th, td {
+  border: solid 3px rgba(255,255,255,0.1);
+  border-collapse: collapse;
   text-align: left;
-  padding: 5px 10px
+  padding: 5px 10px;
+}
+
+table th {
+  background: #3498db; 
+  background-color: rgba(255,255,255,0.3);
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
 }

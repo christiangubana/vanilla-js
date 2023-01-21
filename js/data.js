@@ -53,8 +53,7 @@ Object.values(customers).map(function(customer, index) {
     const {name: name, birthdate: birthdate} = customer;
     
     // Bonus point, show current age based on birthdate
-    const currentAge = Math.floor((new Date() - new Date(birthdate).getTime()) / 3.15576e+10)
-
+    const currentAge = Math.floor((new Date() - new Date(birthdate)) / 31557600000)
     console.log(currentAge)
     
     // build the string with the contents of the iterated row data
