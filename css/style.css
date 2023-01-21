@@ -4,12 +4,14 @@ body {
   line-height: 1.25;
   background: -webkit-linear-gradient(left, #25c481, #25b7c4);
   background: linear-gradient(to right, #25c481, #25b7c4);
-  font-family: 'Roboto', sans-serif;
+  font-family: monospace;
   color: #fff;
   /* color: #383828; */
-
 }
 
+label{
+  font-size: small;
+}
 h2 {
   text-align: center;
   text-transform: uppercase;
@@ -18,11 +20,11 @@ h2 {
 #myInput {
   background-position: 10px 12px; /* Position the search icon */
   background-repeat: no-repeat; /* Do not repeat the icon image */
-  font-size: 16px; /* Increase font-size */
-  padding: 12px 20px 12px 40px; /* Add some padding */
+  padding: 8px 20px 8px 40px; /* Add some padding */
   border: 1px solid #ddd; /* Add a grey border */
   margin-bottom: 12px; /* Add some space below the input */
   outline: none;
+  color: gray;
 }
 
 #customers-table {
