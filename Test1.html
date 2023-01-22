@@ -18,44 +18,22 @@ Please make sure your code runs as effectively as it can.
     <title>Test1 - Customer Table</title>
     <script type="text/javascript" src="jquery.js"></script>
     <link rel="stylesheet" href="./css/style.css" />
-    <script type="text/javascript" src="js/filter.js"></script>
   </head>
   <body>
-    <div class="page-content">
-      <h2>Customers Table</h2>
-      <div class="filter-section">
-        <section>
-          <div style="float: left; margin-right: 20px">
-            <label for="name">Search for name</label><br />
-            <input
-              type="text"
-              id="myInput"
-              onkeyup="fiterTable()"
-              placeholder="Search here.."
-              title="Type in a name or age"
-            />
-          </div>
-
-          <div style="float: left">
-            <label for="email">Filter age</label><br />
-            <input type="text" id="myInput" value="20-30"/>
-          </div>
-
-          <br style="clear: both" />
-        </section>
-      </div>
-      <table id="customers-table">
-        <thead>
-          <tr class="header">
-            <th>#</th>
-            <th>CustomerName</th>
-            <th>Date of Birth</th>
-            <th>Current Age</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
+    <h2>customer table</h2>
+    <label>Search for name or filter age (eg: 20-30)</label><br>
+    <input type="text" id="search-input" placeholder="Search here...">
+    <table id="customers-table">
+      <thead>
+        <tr>
+          <th>Customer Name</th>
+          <th>Date of birth</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody id="customers-table-body"></tbody>
+    </table>
+    
   </body>
   <script type="text/javascript" src="js/data.js" charset="utf-8"></script>
 </html>
